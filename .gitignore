@@ -1,6 +1,6 @@
 .idea
 .vagrant
-bin
-vendor
-spec
-src
+/bin
+/vendor
+/spec
+/src
