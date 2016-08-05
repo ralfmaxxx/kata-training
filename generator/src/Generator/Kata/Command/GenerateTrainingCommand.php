@@ -42,8 +42,8 @@ class GenerateTrainingCommand extends Command
     protected function configure()
     {
         $this
-            ->setName(self::COMMAND_NAME)
-            ->setDescription(self::COMMAND_DESCRIPTION)
+            ->setName(static::COMMAND_NAME)
+            ->setDescription(static::COMMAND_DESCRIPTION)
             ->addArgument(
                 self::ARGUMENT_GENERATOR,
                 null,

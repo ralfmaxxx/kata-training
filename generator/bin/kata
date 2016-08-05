@@ -4,6 +4,7 @@
 
 include_once 'vendor/autoload.php';
 
+use Generator\Kata\Command\GenerateRandomTrainingCommand;
 use Generator\Kata\Command\GenerateTrainingCommand;
 use Generator\Kata\Training\Generator\FizzBuzz\FizzBuzzGenerator;
 use Generator\Kata\Training\Generator\RomanNumbers\RomanNumbersGenerator;
@@ -11,14 +12,18 @@ use Generator\Kata\Training\Generator\StringCalculator\StringCalculatorGenerator
 use Generator\Kata\Training\Generator\SieveOfErathostenes\SieveOfErathostenesGenerator;
 use Symfony\Component\Console\Application;
 
+$availableKatas = [
+    new FizzBuzzGenerator(),
+    new StringCalculatorGenerator(),
+    new RomanNumbersGenerator(),
+    new SieveOfErathostenesGenerator()
+];
+
 $application = new Application();
 $application->add(
-    new GenerateTrainingCommand(
-        new FizzBuzzGenerator(),
-        new StringCalculatorGenerator(),
-        new RomanNumbersGenerator(),
-        new SieveOfErathostenesGenerator()
-    )
+    new GenerateTrainingCommand(...$availableKatas)
 );
+
+$application->add(new GenerateRandomTrainingCommand(...$availableKatas));
 
 $application->run();
