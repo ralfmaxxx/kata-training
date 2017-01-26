@@ -6,7 +6,9 @@ include_once 'vendor/autoload.php';
 
 use Generator\Kata\Command\GenerateRandomTrainingCommand;
 use Generator\Kata\Command\GenerateTrainingCommand;
+use Generator\Kata\Training\Generator\CampaignStatistics\CampaignStatisticsGenerator;
 use Generator\Kata\Training\Generator\FizzBuzz\FizzBuzzGenerator;
+use Generator\Kata\Training\Generator\ImageGallery\ImageGalleryGenerator;
 use Generator\Kata\Training\Generator\RomanNumbers\RomanNumbersGenerator;
 use Generator\Kata\Training\Generator\StringCalculator\StringCalculatorGenerator;
 use Generator\Kata\Training\Generator\SieveOfErathostenes\SieveOfErathostenesGenerator;
@@ -16,7 +18,9 @@ $availableKatas = [
     new FizzBuzzGenerator(),
     new StringCalculatorGenerator(),
     new RomanNumbersGenerator(),
-    new SieveOfErathostenesGenerator()
+    new SieveOfErathostenesGenerator(),
+    new CampaignStatisticsGenerator(),
+    new ImageGalleryGenerator(),
 ];
 
 $application = new Application();

@@ -1,13 +1,13 @@
 <?php
 
-namespace Generator\Kata\Training\Generator\RomanNumbers;
+namespace Generator\Kata\Training\Generator\FizzBuzz;
 
 use Generator\Kata\Training\Generator\AbstractTrainingGenerator;
 use Generator\Kata\Training\Generator\TrainingGeneratorInterface;
 
-class RomanNumbersGenerator extends AbstractTrainingGenerator implements TrainingGeneratorInterface
+class FizzBuzzGenerator extends AbstractTrainingGenerator implements TrainingGeneratorInterface
 {
-    const GENERATOR_NAME = 'Roman Numbers';
+    const GENERATOR_NAME = 'Fizz Buzz Game';
 
     public function getName(): string
     {
