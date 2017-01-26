@@ -1,13 +1,13 @@
 <?php
 
-namespace Generator\Kata\Training\Generator\RomanNumbers;
+namespace Generator\Kata\Training\Generator\ImageGallery;
 
 use Generator\Kata\Training\Generator\AbstractTrainingGenerator;
 use Generator\Kata\Training\Generator\TrainingGeneratorInterface;
 
-class RomanNumbersGenerator extends AbstractTrainingGenerator implements TrainingGeneratorInterface
+class ImageGalleryGenerator extends AbstractTrainingGenerator implements TrainingGeneratorInterface
 {
-    const GENERATOR_NAME = 'Roman Numbers';
+    const GENERATOR_NAME = 'Image gallery';
 
     public function getName(): string
     {
