@@ -2,13 +2,13 @@
 
 ## Requirements
 
-You have to install [vagrant](https://www.vagrantup.com/) 
+It requires docker and docker-compose.
 
 ## Installation
 
 Type:
 
-`vagrant up && vagrant ssh`
+`docker-compose -f infrastructure/docker/docker-compose.yml run php bash`
 
 And after that:
 
