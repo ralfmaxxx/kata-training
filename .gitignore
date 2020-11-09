@@ -1,7 +1,6 @@
 .idea
-.vagrant
-/bin
-/vendor
-/spec
-/src
-/KATA.md
+/application/bin
+/application/vendor
+/application/spec
+/application/src
+/application/KATA.md

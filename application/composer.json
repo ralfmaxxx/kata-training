@@ -1,0 +1,28 @@
+{
+    "name": "ralfmaxxx/kata-training",
+    "description": "Repository for kata training",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Rafał Kański",
+            "email": "ralfmaxxx@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "4.4",
+        "phpunit/phpunit": "^9.4",
+        "phpspec/phpspec": "^6.2",
+        "behat/behat": "^3.7",
+        "behat/mink-extension": "^2.3",
+        "behat/mink-goutte-driver": "^1.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Generator\\Kata\\": "generator/src/",
+            "": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
