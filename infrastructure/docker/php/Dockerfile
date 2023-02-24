@@ -1,4 +1,4 @@
-FROM php:7.4.12-cli
+FROM php:8.2.3-cli
 
 RUN mkdir -p /var/www/scripts
 COPY scripts/ /var/www/scripts/php
